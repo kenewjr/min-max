@@ -1,18 +1,18 @@
-def max_check(x):
-  max_val = x[0] 
+def maxs(x):
+  max = x[0] 
   for check in x: 
-    if check > max_val: 
-      max_val = check 
-  return max_val
+    if check > max: 
+      max = check 
+  return max
 
-def min_check(x):
-  min_val = x[0] 
+def mins(x):
+  min = x[0] 
   for check in x: 
-    if check < min_val: 
-      min_val = check 
-  return min_val
+    if check < min: 
+      min = check 
+  return min
 
-my_list = str(10235768)
+my_list = str(1023)
 
-print("Max : ", max_check(my_list))
-print("Min : ", min_check(my_list))
+print("Max : ", maxs(my_list))
+print("Min : ", min(my_list))
